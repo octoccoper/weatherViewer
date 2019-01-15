@@ -2,7 +2,7 @@
 const weather = new Weather("London");
 
 // Initialize ui object
-const ui = new UI;
+const ui = new UI();
 
 // Get weather on DOM load
 document.addEventListener("DOMContentLoaded", getWeather);
