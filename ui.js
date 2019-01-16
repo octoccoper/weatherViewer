@@ -10,13 +10,13 @@ class UI {
     this.wind = document.getElementById("w-wind");
   }
 
-  paint(weather) {
-    this.location.textContent = weather.name;
-    this.desc.textContent = weather.clouds.all;
-    this.string.textContent = weather.main.temp;
-    this.icon.textContent = weather.weather.icon;
-    this.humidity.textContent = `Relative humidity: ${weather.main.humidity}`;
-    this.wind.textContent = `Speed of wind: ${weather.wind.speed}  meter/sec`;
-    this.current_weather.textContent = weather.weather.description;
+  paint(data) {
+    this.location.textContent = data.name;
+    this.desc.textContent = `Cloudiness, ${data.clouds.all}%`;
+    this.string.textContent = (5/9)*(Number(data.main.temp) - 32);
+    this.icon.setAttribute("src",`http://openweathermap.org/img/w/${data.weather[0].icon}.png`) ;
+    this.humidity.textContent = `Relative humidity: ${data.main.humidity}`;
+    this.wind.textContent = `Speed of wind: ${data.wind.speed}  meter/sec`;
+    this.current_weather.textContent = `Weather description: ${data.weather[0].description}`;
   }
 }
