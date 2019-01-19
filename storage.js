@@ -16,6 +16,6 @@ class Storage {
    }
 
   setLocationData() { 
-    localStorage.setItem("city", city);
+    localStorage.setItem("city", this.city);
   }
 }

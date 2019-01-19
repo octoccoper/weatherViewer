@@ -1,2 +1,3 @@
 # weatherViewer
-Small projects for interacting with weather API.
+Small project for interacting with weather API.
+It save data to local storage.
