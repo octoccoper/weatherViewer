@@ -16,7 +16,7 @@ const ui = new UI();
 document.addEventListener("DOMContentLoaded", getWeather);
 
 // Modal window for change location. Event listener for the button. 
-document.getElementById("w-change-btn").addEventListener("click", (e) => { 
+document.getElementById("w-change-btn").addEventListener("click", (e) => {
   const city = document.getElementById("city").value;
 
   // Change location in ui

@@ -15,7 +15,7 @@ class UI {
     this.desc.textContent = `Cloudiness, ${data.clouds.all}%`;
     let temperature = Math.ceil(Number(data.main.temp) - 273.15);
     this.string.textContent = `${temperature}°C`;
-    this.icon.setAttribute("src",`http://openweathermap.org/img/w/${data.weather[0].icon}.png`) ;
+    this.icon.setAttribute("src", `http://openweathermap.org/img/w/${data.weather[0].icon}.png`);
     this.humidity.textContent = `Relative humidity: ${data.main.humidity}`;
     this.wind.textContent = `Speed of wind: ${data.wind.speed}  meter/sec`;
     this.current_weather.textContent = `Weather description: ${data.weather[0].description}`;
